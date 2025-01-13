@@ -8,17 +8,7 @@
 body {
     font-family: 'Merriweather', serif;
 }
-
-.recetas, .videos, .postres, .articulos {
-    font-size: 25px;
-    padding: 3rem;
-    text-decoration: none;
-    font-family: "Merriweather", serif;
-    font-weight: 300;
-    font-style: normal;
-    color: black;
-}
-
+/* Estructura del main */ 
 h1 {
     font-size: 50px;
     text-align: center;
@@ -34,84 +24,72 @@ h2  {
     font-size: 40px;
     margin-top: 20px;
 }
+.logo{
+    display: block;
+    margin: 0 auto; 
+    margin-top: 0;
+    
+}
+
+.brasas {
+     width: 100%; 
+     height: 300px; 
+     object-fit: cover;
+     object-position: center;
+     border-radius: 5px;
+     margin-top: 20px;
+}
+
+.empanadas {
+    margin-left: 20px;
+    margin-top: 75px;
+    height: 600px;
+}
+.navbar-nav{
+    font-size: 30px;
+    margin-top: 1px;
+}
+.nav-link {
+    margin-left: 120px;
+    color: #2E89D9  !important;
+    margin-top: 30px;
+}
+
+
+/*Estilos para recetas fáciles*/
 h3 {
     color: red;
     font-family: "Merriweather", serif;
     font-weight: 300;
     font-style: normal;
 }
-.brasas {
-     width: 100%; 
-     height: 300px; /* Altura proporcional al viewport */ 
-     object-fit: cover;/* ajustar el video dentro del contenedor */
-     object-position: center;
-     border-radius: 5px;
-     margin-top: 20px;
-}
 
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.empanadas {
-    margin-left: 20px;
-    margin-top: 75px;
-    height: 600px;
-}
-.milas {
-    font-size: 30px;
-    text-align: center;
-    border: 5px solid #efa797;
-    padding: 30px;
-    margin: 20px 0;
-    border-radius: 5px;
-    background-color: white;
-    width: 60%;
-    margin-left: 180px;
-}
-
-
-/*Estilos para recetas fáciles*/
-
-.nav-link {
-    font-size: 20px;
-    color: #2E89D9;
-    text-decoration: none;
-    padding: 40px;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 .content-container {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 20px; /* Espacio entre las secciones */
+    margin-bottom: 20px; 
 }
 
 .recipe-image {
-    width: 300px; /* Establece un ancho fijo */
-    height: 200px; /* Establece una altura fija */
-    object-fit: cover; /* Asegura que la imagen se ajuste al contenedor sin distorsionarse */
-    margin-right: 20px; /* Espacio a la derecha de la imagen */
-
+    width: 300px; 
+    height: 200px; 
+    object-fit: cover; 
+    margin-right: 20px; 
 }
+/* Recetas fáciles*/
 .pure {
     margin-left: 20px;
     margin-top: 75px;
     height: 400px;
 }
 .text-content-uno {
-    flex: 1; /* Ajusta el ancho del contenedor de texto */
+    flex: 1; 
 }
 
 .text-content {
-    flex: 1; /* Ajusta el ancho del contenedor de texto */
+    flex: 1; 
     border: 1px solid #ccc; 
     border-radius: 5px; 
     padding: 20px; 
@@ -160,34 +138,22 @@ h3 {
 .video-item video { 
     width: 100%;
     height: auto; 
-    border-radius:
+    border-radius: 5px;
 }
 
 /* Estilo para postres */
-.nav-link {
-    font-size: 20px;
-    color: #2E89D9;
-    text-decoration: none;
-    padding: 40px;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 .content-container {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 20px; /* Espacio entre las secciones */
+    margin-bottom: 20px; 
 }
 
 .recipe-image {
-    width: 300px; /* Establece un ancho fijo */
-    height: 200px; /* Establece una altura fija */
-    object-fit: cover; /* Asegura que la imagen se ajuste al contenedor sin distorsionarse */
-    margin-right: 20px; /* Espacio a la derecha de la imagen */
+    width: 300px; 
+    height: 200px; 
+    object-fit: cover; 
+    margin-right: 20px; 
 
 }
 .pure {
@@ -196,11 +162,11 @@ h3 {
     height: 400px;
 }
 .text-content-uno {
-    flex: 1; /* Ajusta el ancho del contenedor de texto */
+    flex: 1; 
 }
 
 .text-content {
-    flex: 1; /* Ajusta el ancho del contenedor de texto */
+    flex: 1; 
     border: 1px solid #ccc; 
     border-radius: 5px; 
     padding: 20px; 
@@ -228,25 +194,58 @@ h3 {
 /* Estilo para artiulos de cocina */
 
 .compras {
-    width: 300px; /* Establece un ancho fijo */
-    height: 300px; /* Establece una altura fija */
-    object-fit: cover; /* Asegura que la imagen se ajuste al contenedor sin distorsionarse */
-    margin-right: 20px; /* Espacio a la derecha de la imagen */
+    width: 300px; 
+    height: 300px; 
+    object-fit: cover; 
+    margin-right: 20px;
 
 }
-
-
-
-
-
-
-
-
-
-
-
 footer {
     text-align: center;
     background-color: #2E89D9;
     padding: 10px;
+}
+/* Estilos para Smartphone */
+
+/* Para index */
+
+@media (max-width: 480px){
+
+.nav-link {
+    font-size: 10px;
+    color: #2E89D9;
+    text-decoration: none;
+    padding: 12px;
+    
+}
+
+h1{
+    font-size: 30px;
+}
+h2 {
+    font-size: 20px;
+}
+
+.empanadas {
+    margin-left: 20px;
+    margin-top: 10px;
+    height: 200px;
+
+}
+.content-container {
+    display: block;
+    align-items: flex-start;
+    margin-bottom: 20px; 
+}
+.mila {
+    font-size: 20px;
+    text-align: center;
+    border: 5px solid #efa797;
+    padding: 10px;
+    margin: 1px 0;
+    border-radius: 5px;
+    background-color: white;
+    width: 90%;
+    margin-left: 20px;
+}
 }
